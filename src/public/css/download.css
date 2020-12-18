@@ -1,0 +1,40 @@
+.main {
+  background: #f9c358;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.img-box {
+  width: 150px;
+  height: 150px;
+  animation: jump 0.8s linear alternate infinite;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+.sit {
+  position: relative;
+  right: -100px;
+  transform: translateY(20px);
+}
+button {
+  cursor: pointer;
+  text-align: center;
+  background: #7d6aa5;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: #ffc541;
+  font-size: 18px;
+  padding: 10px 30px;
+}
+
+@keyframes jump {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}

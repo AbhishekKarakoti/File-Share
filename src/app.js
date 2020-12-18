@@ -35,5 +35,5 @@ app.use("/files", downloadPage);
 app.use("/files/download", downloadLink);
 
 app.listen(PORT, () => {
-  console.log("sever has started");
+  // console.log("sever has started");
 });

@@ -60,7 +60,7 @@ Router.post('/upload',(req,res)=>{
          
              
            res.status(201).json({
-               file:`${process.env.APP_BASE_URL}/files/${response.uuid}`
+               file:`${process.env.APP_BASE_URL}files/${response.uuid}`
            })
          }catch(err){
              console.log(err);

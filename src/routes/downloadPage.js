@@ -14,7 +14,7 @@ Router.get('/:uuid',async(req,res)=>{
             filename:response.filename,
             path:response.path,
             size:response.size/1000000,
-            downloadLink:`${process.env.APP_BASE_URL}/files/download/${response.uuid}`,
+            downloadLink:`${process.env.APP_BASE_URL}files/download/${response.uuid}`,
             requestedAt:new Date().toISOString()
         }
         res.render('download.hbs',obj)

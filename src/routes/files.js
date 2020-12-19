@@ -64,9 +64,7 @@ Router.post('/upload',(req,res)=>{
            })
          }catch(err){
              console.log(err);
-             res.status(400).json({
-                 message:"damn.. boi"
-             })
+             res.render('error.hbs');
          }
          
     })

@@ -19,7 +19,7 @@ Router.get('/:uuid',async(req,res)=>{
         }
         res.render('download.hbs',obj)
     }catch(err){
-        console.log(err);
+        // console.log(err);
         return res.render('error.hbs');
     }
 })

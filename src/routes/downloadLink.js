@@ -16,7 +16,7 @@ Router.get('/:uuid',async(req,res)=>{
         res.download(filePath);
         
     }catch(err){
-        console.log(err);
+        // console.log(err);
         return res.render('error.hbs');
     }
 
